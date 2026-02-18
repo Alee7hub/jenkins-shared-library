@@ -1,4 +1,4 @@
 def call() {
-    echo 'Building the application ...'
+    echo "Building the application for branch ${env.BRANCH_NAME} ..."
     sh 'mvn package'
 }
